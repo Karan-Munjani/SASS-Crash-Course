@@ -1,0 +1,46 @@
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - find_health_info
+  - find_temp
+  - find_location
+  - city_info
+  - find_location_covidcheck
+entities:
+  - city
+
+slots:
+  city:
+    type: text
+
+actions:
+  - action_find_and_show_covid_zone
+  
+responses:
+  utter_greet:
+  - text: "Hey! What services do you need?"
+  - text: "Hello"
+
+  utter_goodbye:
+  - text: "Bye!"
+  - text: "Goodbye.."
+
+  utter_find_temp:
+  - text: "Can you record your temperature and let me know?!
+  "
+  utter_find_location_covidcheck:
+  - text: "I can find the status of your city in current COVID-19 situation. Which city do you reside in?"
+
+  utter_find_health_info:
+  - text: "What kind of symptoms are you suffering from ?"
+
+  utter_city_info:
+  - text: "Please give me a few seconds...Finding your associated Covid19 zone:"
+
+  utter_you_are_welcome:
+  - text: "I am happy to help!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

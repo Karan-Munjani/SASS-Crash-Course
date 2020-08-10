@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.CustomBrowser": "firefox"
+    "liveServer.settings.CustomBrowser": "chrome",
+    "projectManager.git.baseFolders": [
+        
+    ]
 }
